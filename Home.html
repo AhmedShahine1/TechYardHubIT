@@ -3,109 +3,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/icomoon/icomoon.css">
+
+    <!-- Owl Carousel (for future use) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="style.css">
     <title>Scroll Animation</title>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">
-            <h2 style="color:white;">Logo</h2>
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
         </div>
-        <ul>
-            <li><a href="#first">Home</a></li>
-            <li><a href="#second">Features</a></li>
-            <li><a href="#third">About</a></li>
-            <li><a href="#fourth">Contact</a></li>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar" role="banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo">
+                        <a href="index.html" class="text-white mb-0">
+                            <img src="assets/logo.png" style="width: 50px;" alt="Brand Logo" class="site-logo-img">
+                        </a>
+                    </h1>
+                </div>
+                <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+                        <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                            <li class="active"><a href="index.html"><span>Home</span></a></li>
+                            <li class="has-children">
+                                <a href="about.html"><span>Dropdown</span></a>
+                                <ul class="dropdown arrow-top">
+                                    <li><a href="#">Menu One</a></li>
+                                    <li><a href="#">Menu Two</a></li>
+                                    <li><a href="#">Menu Three</a></li>
+                                    <li class="has-children">
+                                        <a href="#">Dropdown</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Menu One</a></li>
+                                            <li><a href="#">Menu Two</a></li>
+                                            <li><a href="#">Menu Three</a></li>
+                                            <li><a href="#">Menu Four</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="listings.html"><span>Listings</span></a></li>
+                            <li><a href="about.html"><span>About</span></a></li>
+                            <li><a href="blog.html"><span>Blog</span></a></li>
+                            <li><a href="contact.html"><span>Contact</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+                <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a
+                        href="#" class="site-menu-toggle js-menu-toggle text-white"><span
+                            class="icon-menu h3"></span></a></div>
+
+            </div>
+
+        </div>
+        </div>
+
+    </header>
+    <main id="Main">
+        <section class="container" >
+            <!-- Video Container for the first three parts -->
+            <div class="video-container">
+                <video autoplay loop muted playsinline class="background-video">
+                    <source src="assets/videoplayback.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        
+            <!-- First Part -->
+            <div class="content" id="first">
+                <div class="First-Part">
+                    <div class="sp-container">
+                        <div class="sp-content">
+                            <h2 class="frame-5">
+                                <span>Tech</span>
+                                <span>Yard</span>
+                                <span>Hub</span>
+                            </h2>
+                            <h2 class="frame-5">
+                                <span>IT</span>
+                                <span>Solution</span>
+                            </h2>
+                            <div class="frame-5">
+                                <span>We</span>
+                                <span>Count</span>
+                                <span style="color: chocolate;">the</span>
+                                <span style="color: chocolate;">Time</span>
+                                <span>For</span>
+                                <span>You</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Second Part -->
+                <div class="Second-Part" id="second">
+                    <img src="assets/5ea7f6c4f5732eed769c8e15846d75ba-removebg-preview.png" alt="image" class="scroll-image">
+                </div>
+        
+                <!-- Third Part -->
+                <div class="Third-Part" id="third">
+                    <div class="sp-container">
+                        <div class="sp-content">
+                            <h2 class="frame-5">
+                                <span class="span-1">Practice</span>
+                                <span class="span-2">and</span>
+                                <span class="span-3 underline">Don’t</span>
+                                <span class="span-4 underline">Care</span>
+                            </h2>
+                            <hr>
+                            <div class="frame-5">
+                                <span class="span-5">With</span>
+                                <span class="span-6">many</span>
+                                <span class="span-7">features</span>
+                                <span class="span-8">on</span>
+                                <span class="span-9">board,</span>
+                                <span class="span-10">you</span>
+                                <span class="span-11">can</span>
+                                <span class="span-12">practice</span>
+                                <span class="span-13">and</span>
+                                <span class="span-14">have</span>
+                            </div>
+                            <div class="frame-5">
+                                <span class="span-15">everything</span>
+                                <span class="span-16">you</span>
+                                <span class="span-17">need</span>
+                                <span class="span-18">right</span>
+                                <span class="span-19">under</span>
+                                <span class="span-20">your</span>
+                                <span class="span-21">fingertips.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Fourth Part -->
+                <div class="Fourth-Part" id="fourth">
+                    <img src="assets/Apple_16-inch_MacBook_Pro__Apple_M3_Pro_chip_with_12_core_CPU_and_18_core_GPU__18GB__512GB_SSD_-_Space_Black__Latest_Model____Nebraska_Furniture_Mart-removebg-preview.png" alt="Image" class="scroll-image2">
+                </div>
+            </div>
+        </section>
+
+    
+        <!-- What Is Tech Yard Hub Section -->
+        <section class="company-info container my-5" style=" padding: 2rem; border-radius: 0.5rem;">
+          <h2 class="text-center mb-4">What Is Tech Yard Hub?</h2>
+          <div class="card mb-3">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Who We Are</h5>
+                  <p class="card-text">
+                    Tech Yard Hub is a trusted retailer specializing in laptops and services related to Apple product
+                    imports. We provide top-quality Apple devices, accessories, and offer tailored services for Apple
+                    imports from abroad, ensuring the best prices and fastest delivery.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="assets/logo.png" alt="Tech Yard Hub Logo" class="img-fluid rounded-end" style="height: auto;">
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- New Announcements Section -->
+        <section class="announcement-section container my-5">
+          <h2 class="text-center mb-4">New Announcements</h2>
+          <div id="announcementCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#announcementCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#announcementCarousel" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            </div>
+    
+            <!-- Carousel Content -->
+            <div class="carousel-inner">
+              <!-- Announcement 1: MacBook Air with M3 -->
+              <div class="carousel-item active">
+                <div class="announcement-carousel" style="background-image: url('assets/announcement1.jpg');">
+                  <div class="overlay"></div>
+                  <div class="text-center text-white d-flex justify-content-center align-items-center h-100">
+                    <div class="text-column" style="max-width: 700px;"> <!-- Set a max width for the text -->
+                      <h4>Introducing the MacBook Air with M3</h4>
+                      <p>The all-new MacBook Air powered by the M3 chip delivers exceptional performance and efficiency.
+                        Perfect for professionals and students alike!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Announcement 2: MacBook Pro 2023 -->
+              <div class="carousel-item">
+                <div class="announcement-carousel" style="background-image: url('assets/announcement2.jpg');">
+                  <div class="overlay"></div>
+                  <div class="text-center text-white d-flex justify-content-center align-items-center h-100">
+                    <div class="text-column" style="max-width: 700px;"> <!-- Set a max width for the text -->
+                      <h4>Launch of the MacBook Pro 2023</h4>
+                      <p>Experience the future of performance with the new MacBook Pro 2023, featuring the latest technology
+                        for unparalleled power and efficiency.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#announcementCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#announcementCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+    
+        <!-- Motivation Section to Buy Products (Horizontal Card) -->
+        <section class="container my-5 motivation-section">
+          <h2 class="text-center mb-4">Unlock the Possibilities with Tech Yard Hub</h2>
+          <div class="card mb-3" style="max-width: 1000px; margin: 0 auto;">
+            <div class="row g-0">
+              <div class="col-md-4"> <!-- Increase the width to 4/12 columns -->
+                <img src="assets/Discover Innovation with Apple Devices.jpg" alt="Inspiration to Buy"
+                  class="img-fluid rounded-start" style="height: 250px; width: 100%; object-fit: cover;">
+                <!-- Increased height to 250px -->
+              </div>
+              <div class="col-md-8"> <!-- Adjust to fill the remaining space -->
+                <div class="card-body">
+                  <h5 class="card-title">Discover Innovation with Apple Devices</h5>
+                  <p class="card-text">
+                    At Tech Yard Hub, we offer a variety of Apple laptops and desktops to help you unleash your creativity
+                    and productivity. Whether you're editing videos, developing software, or simply browsing the web, our
+                    cutting-edge products guarantee the best performance, reliability, and style.
+                  </p>
+                  <p class="card-text">
+                    Ready to take the next step? Explore our extensive collection today!
+                  </p>
+                  <a href="store.html" class="btn btn-primary">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us container text-center my-5">
+          <h2>Why Choose Us?</h2>
+          <p>Tech Yard Hub is your go-to source for all your Apple and laptop needs. Here’s why:</p>
+          <div class="row text-center">
+            <div class="col-md-3">
+              <div class="card mb-4">
+                <img src="assets/icon-04.png" alt="Big Discounts" class="card-img-top"
+                  style="width: 100px; height: auto; margin: 0 auto;">
+                <div class="card-body">
+                  <h4 class="card-title">Big Discounts</h4>
+                  <p class="card-text">We offer the best prices for high-quality Apple products and laptops.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-4">
+                <img src="assets/icon-01.png" alt="Fast Shipping" class="card-img-top"
+                  style="width: 100px; height: auto; margin: 0 auto;">
+                <div class="card-body">
+                  <h4 class="card-title">Fast Shipping</h4>
+                  <p class="card-text">Receive your items quickly with our expedited shipping options.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-4">
+                <img src="assets/24-hours-support.png" alt="24/7 Support" class="card-img-top"
+                  style="width: 100px; height: auto; margin: 0 auto;">
+                <div class="card-body">
+                  <h4 class="card-title">24/7 Support</h4>
+                  <p class="card-text">Our team is here to assist you anytime with your queries.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-4">
+                <img src="assets/warranty.png" alt="Warranty" class="card-img-top"
+                  style="width: 100px; height: auto; margin: 0 auto;">
+                <div class="card-body">
+                  <h4 class="card-title">Extended Warranty</h4>
+                  <p class="card-text">We provide extended warranties for peace of mind with your purchases.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <a href="store.html" class="btn btn-primary btn-lg">Visit Our Store</a>
+          </div>
+        </section>
+    
+      </main>
+    
+      <!-- Footer -->
+      <footer id="Footer" class="bg-dark text-white text-center py-3" >
+        <p>&copy; 2024 Tech Yard Hub. All rights reserved.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+          <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+          <li class="list-inline-item"><a href="mailto:support@techyardhub.com" class="text-white">Email Us</a></li>
         </ul>
-    </nav>
-    <section class="container">
-        <!-- Video Container for the first three parts -->
-        <div class="video-container">
-            <video autoplay loop muted playsinline class="background-video">
-                <source src="videoplayback.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <div class="social-media mt-3">
+          <a href="https://www.facebook.com" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.twitter.com" class="text-white mx-2"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
         </div>
+      </footer>
     
-        <!-- First Part -->
-        <div class="content" id="first">
-            <div class="First-Part">
-                <div class="sp-container">
-                    <div class="sp-content">
-                        <h2 class="frame-5">
-                            <span>Tech</span>
-                            <span>Yard</span>
-                            <span>Hub</span>
-                        </h2>
-                        <h2 class="frame-5">
-                            <span>IT</span>
-                            <span>Solution</span>
-                        </h2>
-                        <div class="frame-5">
-                            <span>We</span>
-                            <span>Count</span>
-                            <span style="color: chocolate;">the</span>
-                            <span style="color: chocolate;">Time</span>
-                            <span>For</span>
-                            <span>You</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Second Part -->
-            <div class="Second-Part" id="second">
-                <img src="5ea7f6c4f5732eed769c8e15846d75ba-removebg-preview.png" alt="image" class="scroll-image">
-            </div>
-    
-            <!-- Third Part -->
-            <div class="Third-Part" id="third">
-                <div class="sp-container">
-                    <div class="sp-content">
-                        <h2 class="frame-5">
-                            <span class="span-1">Practice</span>
-                            <span class="span-2">and</span>
-                            <span class="span-3 underline">Don’t</span>
-                            <span class="span-4 underline">Care</span>
-                        </h2>
-                        <hr>
-                        <div class="frame-5">
-                            <span class="span-5">With</span>
-                            <span class="span-6">many</span>
-                            <span class="span-7">features</span>
-                            <span class="span-8">on</span>
-                            <span class="span-9">board,</span>
-                            <span class="span-10">you</span>
-                            <span class="span-11">can</span>
-                            <span class="span-12">practice</span>
-                            <span class="span-13">and</span>
-                            <span class="span-14">have</span>
-                        </div>
-                        <div class="frame-5">
-                            <span class="span-15">everything</span>
-                            <span class="span-16">you</span>
-                            <span class="span-17">need</span>
-                            <span class="span-18">right</span>
-                            <span class="span-19">under</span>
-                            <span class="span-20">your</span>
-                            <span class="span-21">fingertips.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Fourth Part -->
-            <div class="Fourth-Part" id="fourth">
-                <img src="Apple_16-inch_MacBook_Pro__Apple_M3_Pro_chip_with_12_core_CPU_and_18_core_GPU__18GB__512GB_SSD_-_Space_Black__Latest_Model____Nebraska_Furniture_Mart-removebg-preview.png" alt="Image" class="scroll-image2">
-            </div>
-        </div>
-    </section>
-<section class="body">
-    <section>
-        <h1>All Features</h1>
-    </section>
-</section>
+
+
+    <!-- Scripts -->
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Sticky JS (for sticky navbar) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
+
+
     <script src="script.js"></script>
 </body>
 </html>
